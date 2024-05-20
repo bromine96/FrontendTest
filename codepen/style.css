@@ -83,7 +83,9 @@
         font-style: italic;
     }    
 
-    .form-wrapper2{ 
+    /* .form-wrapper2 {  not work: specificity of 10*/ 
+    /* .form-wrapper2 button{   not work: specificity of 11*/
+    .form-wrapper .form-wrapper2{  /*work: specificity of 20 */
         overflow: visible;
         position: relative;
         float: right;
